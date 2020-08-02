@@ -4,7 +4,7 @@ import TableBody from './TableBody';
 // import API from ./utils/API;
 
 const Table = (props) => {
-    
+
     return (
         <table>
             <thead>
