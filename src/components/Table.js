@@ -1,17 +1,15 @@
 import React from 'react';
 import TableHead from './TableHead';
 import TableBody from './TableBody';
-// import API from ./utils/API;
 
 const Table = (props) => {
-
     return (
         <table>
             <thead>
-                <TableHead />
+                <TableHead handleSort={props.handleSort} />
             </thead>
             <tbody>
-                {props.users.map(user => <TableBody {...user} />)}
+                {props.users.map((user) => <TableBody key={user._id} {...user} />)}
             </tbody>
         </table>
     )
