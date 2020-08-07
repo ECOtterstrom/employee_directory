@@ -1,15 +1,14 @@
 import React from "react";
-//import Button from './Button';
 
 const TableHead = (props) => {
     return (
             <tr>
-                <td onClick={() => props.handleSort()}>Last Name</td>
-                {/* <td>Last Name</td> */}
-                <td>First Name</td>
-                <td>Email</td>
-                <td>Phone Number</td>
-                <td>Picture</td>
+                <th scope="col" onClick={() => props.handleSort()}>Last Name</th>
+                {/* <th scope="col">Last Name</th> */}
+                <th scope="col">First Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Picture</th>
             </tr>
     )    
 }

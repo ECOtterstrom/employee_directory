@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Table from './components/Table';
 import API from './utils/API';
 import InputField from './components/InputField';
+import Header from './components/Header';
+//import './styles/index.css'
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -41,10 +43,13 @@ function App() {
 
   
   return (
-    <div>
+    <>
+    <Header />
+    <div className="container">
       <InputField handleChange={handleChange} />
       <Table users={filteredUsers} handleSort={handleSort} />
     </div>
+    </>
   );
 }
 
