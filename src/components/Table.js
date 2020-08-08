@@ -6,7 +6,7 @@ import TableBody from './TableBody';
 const Table = (props) => {
 
     return (
-        <div className="Container">
+        <div className="container">
             <div className="row">
                 <table className='table'>
                     <thead>
