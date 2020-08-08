@@ -21,9 +21,9 @@ function App() {
   //searches for employees based on last name
   const handleChange = (event) => {
     //updates filteredUsers array
-    const filter = event.target.value
+    const filter = event.target.value.toLowerCase()
     
-    const result = users.filter(user => user.name.last.includes(filter))
+    const result = users.filter(user => user.name.last.toLowerCase().includes(filter))
     setFilteredUsers(result)
   }
 
